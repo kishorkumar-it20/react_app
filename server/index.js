@@ -9,7 +9,7 @@ app.use('/images',express.static(path.join(__dirname,"/images")));
 app.use(express.json());
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
-let mbstring = 'mongodb+srv://KISHORKUMAR:hd0a3Rn6Nmg2LsAZ@cluster0.epodse0.mongodb.net/communityapp?retryWrites=true&w=majority'
+let mbstring = ''
 mongoose.connect(mbstring)
 .then( () => {
     console.log('DB Connected!');
